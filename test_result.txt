@@ -1,0 +1,10 @@
+
+❔ Querying: 'Naruto'
+   👉 Found: Naruto (Distance: 0.2629)
+   👉 Found: Naruto: Akaki Yotsuba no Clover wo Sagase (Distance: 0.2787)
+   👉 Found: Naruto Movie 2: Dai Gekitotsu! Maboroshi no Chiteiiseki Dattebayo! (Distance: 0.3503)
+
+❔ Querying: 'One Piece'
+   👉 Found: One Piece Movie 06: Omatsuri Danshaku to Himitsu no Shima (Distance: 0.6429)
+   👉 Found: One Piece (Distance: 0.6671)
+   👉 Found: Dual! Parallel Runrun Monogatari Special (Distance: 0.6758)
