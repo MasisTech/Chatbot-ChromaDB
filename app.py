@@ -188,7 +188,6 @@ def page_manage():
     tab1, tab2, tab3 = st.tabs(["➕ Tambah", "✏️ Edit (Update)", "🗑️ Hapus (Delete)"])
 
     # --- TAB 1: ADD ---
-    # --- TAB 1: ADD ---
     with tab1:
         st.subheader("Tambah Anime")
         with st.form("add_form", clear_on_submit=True):
