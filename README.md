@@ -1,4 +1,4 @@
-# 🚀 Panduan Menjalankan Chatbot Anime (Clone dari GitHub)
+# Panduan Menjalankan Chatbot Anime (Clone dari GitHub)
 
 Tutorial ini dibuat khusus untuk teman-teman yang ingin menjalankan projek **Chatbot Anime** ini di laptop masing-masing.
 
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4. 🔑 SETUP API KEY (PENTING!)
+## 4. SETUP API KEY (PENTING!)
 
 Karena API Key sifatnya rahasia, file kuncinya **TIDAK** ikut ter-upload di GitHub. Kalian harus buat sendiri codenya agar bisa jalan.
 
@@ -81,12 +81,12 @@ Tunggu sebentar sampai browser terbuka otomatis. Selamat mencoba fiturnya!
 
 Mungkin kalian bertanya-tanya tentang fungsi folder-folder misterius ini. Berikut alasannya:
 
-### 📁 `.streamlit`: Pusat Kendali & Rahasia
+### `.streamlit`: Pusat Kendali & Rahasia
 Folder ini memegang dua peran vital:
 1.  **`config.toml` (Sang Desainer)**: File ini mempercantik tampilan aplikasi. Ia mengatur tema warna dan font agar aplikasi terlihat premium dan nyaman dipandang.
 2.  **`secrets.toml` (Sang Penjaga)**: File ini adalah brankas besi untuk menyimpan data sensitif seperti API Key. Kita menyimpan kunci rahasia di sini agar aman dan terpisah dari kode utama.
 
-### 🐍 `.venv`: Ruang Kerja Eksklusif
+### `.venv`: Ruang Kerja Eksklusif
 Bayangkan `.venv` sebagai bengkel pribadi khusus untuk proyek ini.
 *   **Wadah Terisolasi**: Semua alat (library) tersimpan rapi di sini.
 *   **Stabilitas Terjamin**: Proyek tetap berjalan mulus tanpa gangguan dari versi library di proyek lain.
@@ -94,4 +94,4 @@ Bayangkan `.venv` sebagai bengkel pribadi khusus untuk proyek ini.
 
 ---
 **Catatan:**
-Saat pertama kali dijalankan, aplikasi akan mendownload model AI (`multilingual-e5-small`) sekitar 500MB+ secara otomatis. Pastikan internet lancar ya! ☕
+Saat pertama kali dijalankan, aplikasi akan mendownload model AI (`multilingual-e5-small`) sekitar 500MB+ secara otomatis. Pastikan internet lancar ya! 
