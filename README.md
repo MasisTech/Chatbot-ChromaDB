@@ -114,23 +114,23 @@ Selain `.streamlit` dan `.venv`, ada dua folder jantung aplikasi ini:
 
 Kalian mungkin sadar ada banyak "bahan" yang kita masak di sini. Mari kita bedah satu per satu kenapa mereka dipilih:
 
-### 1. Groq Cloud (Si Cepat Kilat) ⚡
+### 1. Groq Cloud (Si Cepat Kilat)
 Kita tidak memakai OpenAI (ChatGPT) biasa, tapi **Groq**.
 *   **Peran**: "Juru Bicara". Dia yang merangkai jawaban sopan dari data yang ditemukan ChromaDB.
 *   **Kenapa?**: Kecepatannya luar biasa (menggunakan Chip LPU khusus). Chatbot jadi terasa instan, tidak *loading* lama seperti AI konvensional.
 
-### 2. Model `multilingual-e5-small` (Si Penerjemah Makna) 🧠
+### 2. Model `multilingual-e5-small` (Si Penerjemah Makna)
 Ini adalah "mesin" di balik ChromaDB.
 *   **Peran**: Mengubah teks "Aku lagi galau pengen nangis" menjadi deretan angka matematika vector.
 *   **Kenapa versi `multilingual`?**: Karena anime kita punya judul Bahasa Jepang/Inggris tapi sinopsis Indonesia. Model ini jago memahami campuran bahasa itu.
 *   **Kenapa versi `small`?**: Biar ringan jalan di laptop kalian, tidak butuh RAM besar "Hugging Face" yang berat.
 
-### 3. Pandas (Si Pustakawan) 🐼
+### 3. Pandas (Si Pustakawan)
 Library wajib anak data.
 *   **Peran**: Mengurus file `csv` (Excel-nya Python).
 *   **Kenapa?**: Memudahkan fitur Tambah/Edit/Hapus data. Saat kalian edit anime di aplikasi, Pandas yang sibuk menulis ulang file CSV di belakang layar agar tetap rapi.
 
-### 4. Sentence-Transformers (Jembatan) 🌉
+### 4. Sentence-Transformers (Jembatan)
 Library penghubung.
 *   **Peran**: Aplikasi Python kita tidak bisa ngobrol langsung sama file model AI mentah. Library ini adalah "driver" yang memungkinkan kode Python memanggil kekuatan model `e5-small` tadi.
 
