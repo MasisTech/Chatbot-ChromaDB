@@ -201,7 +201,20 @@ def page_manage():
                 if not title or not synops:
                     st.error("Wajib isi Judul & Sinopsis!")
                 else:
-                    if not new_id: new_id = str(int(time.time()))
+                    # LOGIC AUTO ID (N+1)
+                    if not new_id:
+                        try:
+                            # Baca CSV untuk cari ID terakhir
+                            df_temp = pd.read_csv(CSV_PATH)
+                            # Pastikan ID dianggap angka
+                            df_temp['id'] = pd.to_numeric(df_temp['id'], errors='coerce')
+                            max_id = int(df_temp['id'].max())
+                            new_id = str(max_id + 1)
+                        except Exception as e:
+                            # Fallback kalau CSV kosong/error
+                            print(f"Gagal generate ID n+1: {e}")
+                            new_id = str(int(time.time())) 
+
                     doc_text = f"{title} {genre} {synops}"
                     
                     try:
@@ -407,7 +420,7 @@ def page_manage():
                         st.write("")
                         # Tombol Hapus pemicu
                         if st.session_state.confirm_del_id != cid:
-                             if st.button("🗑️ Hapus", key=f"del_{cid}"):
+                             if st.button("Hapus", key=f"del_{cid}"):
                                 st.session_state.confirm_del_id = cid
                                 st.rerun()
 

@@ -22,7 +22,7 @@ def main():
         print(f"✅ SIAP! Terhubung ke database dengan {total_data} anime.")
         
     except Exception as e:
-        print(f"❌ Error: Tidak bisa membuka database. Pastikan sudah menjalankan 'reset_dan_tes.py' dulu!\nDetail: {e}")
+        print(f"❌ Error: Tidak bisa membuka database. Pastikan sudah menjalankan 'setup_chroma_2.py' dulu!\nDetail: {e}")
         return
 
     # 2. Loop Pencarian

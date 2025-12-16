@@ -1,0 +1,15 @@
+[theme]
+# Warna Utama (Tombol, Slider, Judul) - Kita pakai Orange Anime
+primaryColor = "#FF4B4B"
+
+# Warna Background (Latar Belakang)
+backgroundColor = "#0E1117"
+
+# Warna Background Sidebar (Menu Kiri)
+secondaryBackgroundColor = "#262730"
+
+# Warna Teks
+textColor = "#FAFAFA"
+
+# Font (sans serif, serif, or monospace)
+font = "sans serif"
